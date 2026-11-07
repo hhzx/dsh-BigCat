@@ -1,0 +1,22 @@
+{
+  "name": "dsh-BigCat",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "点击已发送的消息即可改写并重新发送；右上角图钉控制 DSH Desktop 是否置顶。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhzx/dsh-BigCat.git"
+  },
+  "homepage": "https://github.com/hhzx/dsh-BigCat#readme",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "immediately": true, "inject": [] }
+  }
+}
